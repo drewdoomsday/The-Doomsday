@@ -12,6 +12,11 @@
 	font-style: normal;
 }
 
+a{
+	color: black;
+	text-decoration: none;
+}
+
 body {
 	font-family: 'Times', arial;
 }
@@ -25,13 +30,50 @@ h1, h2, h3, h4, h5, h6{
 p{
 }
 
-.title-font {
+.titlecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.countdowncontainer {
+	font-family: arial;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.doomsday {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.title-font{
     font-family: 'OldEngFont', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
     font-size: 115px;
     color: black;
     text-align: center;
     margin-top: -10px;
 	margin-bottom: -10px;
+}
+
+.quote {
+	flex: 1;
+    font-style: italic;
+    margin: 0;
+	border: 1px solid black;
+	padding: 5px;
 }
 
 .lineL{
@@ -93,8 +135,8 @@ p{
 	margin-right: 5px;
 	text-align: justify;
 	text-justify: inter-word;
-	border-bottom: 1px solid black;
 }
+
 
 #dateTime {
     font-size: 20px;
