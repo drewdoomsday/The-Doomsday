@@ -41,14 +41,12 @@ p{
 	display: flex;
 	margin-top: 20px;
 	flex-direction: column;
-	border: 1px solid red; /*For easy troubleshooting*/
 }
 
 .testimage{
 	flex: 3;
 	display: flex;
 	margin-left: 50px;
-	border: 1px solid yellow; /*For easy troubleshooting*/
 }
 
 .testinfo{
