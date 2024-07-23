@@ -12,6 +12,23 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Towne';
+	src: url('towne.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#e{
+	font-family: towne;
+    font-size: 130px;
+}
+
+html {
+    touch-action: manipulation; /* Prevents double-tap to zoom on mobile devices */
+    zoom: 1.0; /* Sets initial zoom level to 1.0, preventing zooming */
+}
+
 a{
 	color: black;
 	text-decoration: none;
@@ -30,26 +47,43 @@ h1, h2, h3, h4, h5, h6{
 p{
 }
 
+b{
+	text-shadow: none;
+}
+
 .titlecontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+	margin-left: 48px;
+	margin-right: 48px;
+	border: 1px solid none; /*For easy troubleshooting*/
 }
 
 .countdowncontainer {
 	font-family: arial;
-	flex: 1;
+	flex: 0 0 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 1px solid none; /*For easy troubleshooting*/
 }
 
 .doomsday {
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 5px;
+	text-align: center;
+}
+
+.smol{
+	display: flex;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -10px;
+	border: 1px dashed none; /*For easy troubleshooting*/
 }
 
 .countdown {
@@ -66,14 +100,18 @@ p{
     text-align: center;
     margin-top: -10px;
 	margin-bottom: -10px;
+	border: 1px solid none; /*For easy troubleshooting*/
 }
 
 .quote {
 	flex: 1;
+	flex: 0 0 200px;
     font-style: italic;
-    margin: 0;
-	border: 1px solid black;
+	text-align: justify;
+	text-justify: inter-word;
+    margin-left: 13px;
 	padding: 5px;
+	border: 1px solid black;
 }
 
 .lineL{
@@ -84,34 +122,42 @@ p{
 	margin-top: 3px;
 }
 
-.container{
+.mc{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	border: none;
-	width: 600px;
-	height: 600px;
-	margin-left: 50px;
-    margin-top: 10px;
+	width: 92.3%;
+	height: 660px;
+	margin-left: 49px;
+	border: 1px solid none; /*For easy troubleshooting*/
 }
-
-.vl {
-	border-left: 1px solid black;
-	height: 530px;
-	margin-top: 28px;
-}
-
+/*Start of C1*/
 .cv{
+	display: flex;
 	font-style: italic;
 	font-size: 30px;
+	width: 97%;
 	padding: 5px;
 	border-bottom: 1px solid black;
 }
 
-.content{
+.c1{
 	display: flex;
-	text-align: justify;
-	text-justify: inter-word;
+	flex-direction: column;
+	border: none;
+	width: 50%;
+	height: 640px;
+    margin-top: 10px;
+	border-bottom: 1px solid none; /*For easy troubleshooting*/
 }
+
+.c1b{
+	display: flex;
+	flex-direction: row;
+	height: 55%;
+	border: 1px solid none; /*For easy troubleshooting*/
+}
+
 
 .image{
 	flex: 1;
@@ -121,22 +167,177 @@ p{
 .image img{
 	height: 300px;
 	width: 300px;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin-top: 16px;
+	margin-right: 5px;
 }
 
 .info{
-	flex: 1;
-	margin-right: 5px;
+	font-size: 17px;
+	text-align: justify;
+	text-justify: inter-word;
+	margin-right: 10px;
+	margin-bottom: -10px;
+	border: 1px solid none; /*For easy troubleshooting*/
+}
+#name{
+	font-size: 25px;
 }
 
 .text{
-	margin-top: -248px;
-	margin-right: 5px;
+	font-size: 17px;
+	margin-top: -23px;
 	text-align: justify;
 	text-justify: inter-word;
+	margin-right: 10px;
+	border: 1px solid none; /*For easy troubleshooting*/
+}
+/*End of C1*/
+
+/*Start of C2*/
+.c2{
+	display: flex;
+	flex-direction: column;
+	font-size: 17px;
+	width: 50%;
+	height: 600px;
+    margin-top: 10px;
+	border-bottom: 1px solid none;
 }
 
+.c2b{
+	display: flex;
+	flex-direction: row;
+	font-size: 17px;
+	width: 100%;
+	height: 300px;
+	border: 1px solid none;
+}
+
+/*Content 2 Title Container*/
+.c2t{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+	font-size: 30px;
+	height: 30%;
+	width: 490px;
+	margin-left: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#arial{
+	font-family: arial;
+	font-size: 30px;
+}
+
+.hrt{
+    width: 50%;
+    height: 1px;
+    border: none;
+    background-color: black;
+    margin: 0px 0;
+}
+
+.hrb{
+    width: 50%;
+    height: 1px;
+    border: none;
+    background-color: black;
+    margin: 0px 0;
+}
+
+.c2texta{
+	display: flex;
+	flex-direction: row;
+	text-align: justify;
+	font-size: 17px;
+	height: 100%;
+	width: 490px;
+	margin-left: 10px;
+	border: 1px dashed none;
+}
+
+.c2textb{
+	display: flex;
+	flex-direction: row;
+	text-align: justify;
+	font-size: 17px;
+	height: 100%;
+	width: 48%;
+	margin-left: 10px;
+	border: 1px dashed none;
+}
+
+.c2b2{
+	display: flex;
+	flex-direction: row;
+	text-align: justify;
+	font-size: 17px;
+	height: 100%;
+	width: 100%;
+	margin-top: -185px;
+	border: 1px dashed none;
+}
+
+/*End of C2*/
+
+.c3{
+	display: flex;
+}
+/*Start of Footer*/
+.fc{
+	display: flex;
+	flex-direction: row;
+	width: 92.3%;
+	margin-left: 49px;
+	font-family: arial;
+	align-items: center;
+	border: 1px solid lightgray;
+}
+.logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#logo{
+	width: 80px;
+	height: 80px;
+	border: 1px solid lightgray;
+}
+
+.divider{
+	display: flex;
+	justify-content: center;
+	width: 50px;
+	border: 1px dashed none;
+}
+
+.fcontact{
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	margin-left: 365px;
+	border: 1px solid none;
+}
+
+.ffeedback{
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	border: 1px solid none;
+}
+
+.freport{
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	border: 1px solid none;
+}
+
+/*End of Footer*/
 
 #dateTime {
     font-size: 20px;
